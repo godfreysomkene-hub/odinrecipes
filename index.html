@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Odin Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1 class="logo">🍴 ODIN RECIPES</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Delicious Food Starts Here</h2>
+
+            <p>
+                Simple recipes. Delicious meals. Happy cooking.
+            </p>
+
+            <a href="#recipes" class="button">
+                Explore Recipes
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <h2>Find a Recipe</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a recipe..."
+            >
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+
+        <section class="categories">
+
+            <h2>Recipe Categories</h2>
+
+            <div class="category-buttons">
+
+                <button onclick="filterRecipes('all')">
+                    All
+                </button>
+
+                <button onclick="filterRecipes('breakfast')">
+                    🥞 Breakfast
+                </button>
+
+                <button onclick="filterRecipes('lunch')">
+                    🍚 Lunch
+                </button>
+
+                <button onclick="filterRecipes('dinner')">
+                    🍗 Dinner
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED RECIPE -->
+
+        <section class="featured">
+
+            <div class="featured-image">
+
+                <img
+                    src="image/nigerian jollof rice png1.webp"
+                    alt="Jollof Rice">
+                    
+
+            </div>
+
+            <div class="featured-content">
+
+                <span class="featured-label">
+                    ⭐ FEATURED RECIPE
+                </span>
+
+                <h2>Jollof Rice</h2>
+
+                <p>
+                    A flavorful West African rice dish made with
+                    tomatoes, peppers, onions and delicious spices.
+                </p>
+
+                <div class="recipe-details">
+
+                    <span>⏱️ 45 mins</span>
+
+                    <span>📊 Medium</span>
+
+                    <span>🍚 Lunch</span>
+
+                </div>
+
+                <a href="jollof-rice.html" class="button">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECIPES -->
+
+        <section id="recipes">
+
+            <div class="section-title">
+
+                <h2>Popular Recipes</h2>
+
+                <p>
+                    Choose a recipe and start cooking.
+                </p>
+
+            </div>
+
+
+            <div class="recipe-container">
+
+
+                <!-- JOLLOF RICE -->
+
+                <div
+                    class="recipe-card"
+                    data-category="lunch dinner"
+                    data-name="jollof rice"
+                >
+
+                    <img
+                        src="image/nigerian jollof rice png1.webp"
+                        alt="Jollof Rice"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🍚 Jollof Rice</h3>
+
+                        <p>
+                            A flavorful West African rice dish
+                            packed with tomatoes and spices.
+                        </p>
+
+                        <div class="recipe-details">
+
+                            <span>⏱️ 45 mins</span>
+
+                            <span>📊 Medium</span>
+
+                        </div>
+
+                        <a
+                            href="jollof-rice.html"
+                            class="button"
+                        >
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FRIED CHICKEN -->
+
+                <div
+                    class="recipe-card"
+                    data-category="lunch dinner"
+                    data-name="fried chicken"
+                >
+
+                    <img
+                        src="image/crispy-fried-chicken-free-photo.jpg"
+                        alt="Fried Chicken"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🍗 Fried Chicken</h3>
+
+                        <p>
+                            Crispy, juicy and perfectly seasoned
+                            fried chicken.
+                        </p>
+
+                        <div class="recipe-details">
+
+                            <span>⏱️ 35 mins</span>
+
+                            <span>📊 Easy</span>
+
+                        </div>
+
+                        <a
+                            href="fried-chicken.html"
+                            class="button"
+                        >
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PANCAKES -->
+
+                <div
+                    class="recipe-card"
+                    data-category="breakfast"
+                    data-name="pancakes"
+                >
+
+                    <img
+                      src="image/pancakes-image-hd-free-photo.jpg"
+                      alt="Pancakes"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🥞 Pancakes</h3>
+
+                        <p>
+                            Soft and fluffy pancakes perfect
+                            for breakfast.
+                        </p>
+
+                        <div class="recipe-details">
+
+                            <span>⏱️ 20 mins</span>
+
+                            <span>📊 Easy</span>
+
+                        </div>
+
+                        <a
+                            href="pancakes.html"
+                            class="button"
+                        >
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="about">
+
+            <h2>About Odin Recipes</h2>
+
+            <p>
+                Welcome to Odin Recipes, a simple place to discover
+                delicious meals and easy-to-follow recipes.
+            </p>
+
+            <p>
+                Whether you're preparing breakfast, lunch or dinner,
+                we've got something delicious for you.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Odin Recipes. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
